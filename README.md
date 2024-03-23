@@ -1,6 +1,6 @@
 # mayQII
 
-[![Witches](http://img.youtube.com/vi/7mbXFHtN6pc/0.jpg)](https://www.youtube.com/watch?v=7mbXFHtN6pc)
+[![mayQII](http://img.youtube.com/vi/7mbXFHtN6pc/0.jpg)](https://www.youtube.com/watch?v=7mbXFHtN6pc)
 
 ## 説明
 闇を討ってください。<br>
