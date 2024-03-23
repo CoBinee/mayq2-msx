@@ -1,0 +1,33 @@
+crt0.rel            :   crt0.s \
+                        main.inc
+main.rel            :   main.s main.inc \
+                        bios.inc System.inc
+System.rel          :   System.s System.inc \
+                        main.inc bios.inc vdp.inc
+Math.rel            :   Math.s Math.inc
+App.rel             :   App.s App.inc \
+                        bios.inc vdp.inc System.inc Title.inc Game.inc
+Sound.rel           :   Sound.s Sound.inc \
+                        bios.inc vdp.inc System.inc App.inc
+Title.rel           :   Title.s Title.inc \
+                        bios.inc vdp.inc System.inc App.inc Sound.inc
+Game.rel            :   Game.s Game.inc \
+                        bios.inc vdp.inc System.inc App.inc Sound.inc Item.inc Camera.inc Player.inc Enemy.inc Boss.inc Magic.inc Field.inc Dungeon.inc
+Camera.rel          :   Camera.s Camera.inc \
+                        bios.inc vdp.inc System.inc App.inc Sound.inc Game.inc Item.inc
+Player.rel          :   Player.s Player.inc \
+                        bios.inc vdp.inc System.inc App.inc Sound.inc Game.inc Item.inc Camera.inc Field.inc Dungeon.inc
+Enemy.rel           :   Enemy.s Enemy.inc \
+                        bios.inc vdp.inc System.inc App.inc Sound.inc Game.inc Item.inc Camera.inc Player.inc EnemyOne.inc Field.inc
+EnemyOne.rel        :   EnemyOne.s EnemyOne.inc \
+                        bios.inc vdp.inc System.inc App.inc Sound.inc Game.inc Item.inc Camera.inc Player.inc Enemy.inc Magic.inc Field.inc
+Boss.rel            :   Boss.s Boss.inc \
+                        bios.inc vdp.inc System.inc App.inc Sound.inc Game.inc Camera.inc Player.inc Magic.inc Dungeon.inc
+Magic.rel           :   Magic.s Magic.inc \
+                        bios.inc vdp.inc System.inc App.inc Sound.inc Game.inc Camera.inc Field.inc Dungeon.inc
+Field.rel           :   Field.s Field.inc \
+                        bios.inc vdp.inc System.inc App.inc Sound.inc Game.inc Item.inc Camera.inc
+Dungeon.rel         :   Dungeon.s Dungeon.inc \
+                        bios.inc vdp.inc System.inc App.inc Sound.inc Game.inc Camera.inc
+
+pattern.rel         :   pattern.s
